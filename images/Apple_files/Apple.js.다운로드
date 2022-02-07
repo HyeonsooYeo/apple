@@ -1,0 +1,22 @@
+$(function(){
+    $('.m_bar').click(function () {
+        $('.m_menu_page').css("top", 0);
+        $('html').css("overflowY", 'hidden')
+        $('.m_menu_page').css("overflowY", 'scroll')
+    });
+    $('.m_menu_close').click(function () {
+        $('.m_menu_page').css("top", '-100%');
+        $('.m_menu_page').css({"overflow": 'hidden'})
+        $('html').css("overflowY", 'scroll')
+    });
+
+    //  아코디언 메뉴
+    $('.footer_menu>li').click(function () {
+        $('.footer_submenu').slideUp();
+        if ($(this).children('.footer_submenu').is(':hidden')) {
+            $(this).children('.footer_submenu').slideDown();
+        } else {
+            $(this).children('.footer_submenu').slideUp();
+        }
+    });
+})
