@@ -43,7 +43,7 @@ $(function () {
                         $(this).removeClass('on')
                     }
                 })
-            })
+            }).scroll();
         } else { 
             /* 스크립트내용*/ 
             $(window).scroll(function () {

@@ -132,6 +132,7 @@ body {
 }
 
 #popup {
+    width:100%;
     position: fixed;
     left: 0;
     right: 0;
@@ -191,6 +192,7 @@ body {
 #wrap {
     width: 100%;
     margin: 0 auto;
+    overflow-x: hidden;
 
 
     header {
