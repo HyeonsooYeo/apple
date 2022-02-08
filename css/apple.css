@@ -121,7 +121,7 @@ body {
 #popup .modal h1 {
   text-align: center;
   margin-bottom: 20px;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
@@ -1043,6 +1043,10 @@ footer .inner .footer_btm_copy .address li:last-child {
 @media screen and (min-width: 830px) {
   html {
     font-size: 18px;
+  }
+  #popup .modal h1 {
+    font-size: 2rem;
+    font-weight: 700;
   }
   #content > section:nth-child(1) {
     opacity: 1;
