@@ -147,10 +147,10 @@ body {
         margin: 100px auto 0;
         position: relative;
 
-        h1 {
+        h2 {
             text-align: center;
             margin-bottom: 20px;
-            @include titleFont(1.5rem, 700)
+            @include titleFont(2rem, 700)
         }
 
         .pop_close {
@@ -532,11 +532,16 @@ body {
                 transform: translate(-50%, 0);
 
                 .con_small_text {
-                    font-size: 0.750rem;
+                    font-size: 0.700rem;
                     font-weight: 600;
-                    margin-bottom: -10px;
+                    margin-bottom: -5px;
                 }
-
+                .con_title {
+                    @include titleFont(1.875rem, 700);
+                    letter-spacing: -2px;
+                    line-height: 1.2;
+                    margin-bottom: 5px;
+                }
                 .con_subtext {
                     @include subFont(1rem, 600);
                     margin-bottom: 5px
@@ -939,7 +944,7 @@ footer {
     #popup {
 
         .modal {
-            h1 {
+            h2 {
                 @include titleFont(2rem, 700)
             }
         }
